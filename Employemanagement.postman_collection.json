@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "c1ad2598-8384-4f35-8784-1cc73980dd7c",
+		"name": "Employemanagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50342960",
+		"_collection_link": "https://girishayyant24bss068-247422.postman.co/workspace/GIRISH-AYYAN-T-24BSS068's-Works~f0338d38-4557-48e4-8551-aaca7e461d3f/collection/50342960-c1ad2598-8384-4f35-8784-1cc73980dd7c?action=share&source=collection_link&creator=50342960"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							" {\r",
+							"        \"productName\": \"Gorgeous Marble Bacon\",\r",
+							"        \"productPrice\": \"924.19\",\r",
+							"        \"stock\": true,\r",
+							"        \"id\": \"1\"\r",
+							"    },"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"productName\": \"{{$randomProductName}}\",\r\n        \"productPrice\": \"{{$randomPrice}}\",\r\n        \"stock\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://692593b582b59600d7243595.mockapi.io/product/Products",
+					"protocol": "https",
+					"host": [
+						"692593b582b59600d7243595",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"product",
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\": \"{{$randomProductName}}\",\r\n    \"productPrice\": \"{{$randomPrice}}\",\r\n    \"stock\": true,\r\n    \"id\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://692593b582b59600d7243595.mockapi.io/product/Products/1",
+					"protocol": "https",
+					"host": [
+						"692593b582b59600d7243595",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"product",
+						"Products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"productName\": \"{{$randomProductName}}\",\r\n        \"productPrice\": \"{{$randomPrice}}\",\r\n        \"stock\": \"true\"\r\n    }"
+				},
+				"url": {
+					"raw": "https://692593b582b59600d7243595.mockapi.io/product/Products/6",
+					"protocol": "https",
+					"host": [
+						"692593b582b59600d7243595",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"product",
+						"Products",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"productName\": \"{{$randomProductName}}\",\r\n        \"productPrice\": \"{{$randomPrice}}\",\r\n        \"stock\": \"true\"\r\n    }"
+				},
+				"url": {
+					"raw": "https://692593b582b59600d7243595.mockapi.io/product/Products/6",
+					"protocol": "https",
+					"host": [
+						"692593b582b59600d7243595",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"product",
+						"Products",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
